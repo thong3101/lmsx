@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F6F6F6;
+    font-family: 'Fredoka', sans-serif;
+}
+/* global css item */
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.col-20{
+    width: 20%;
+    padding: 15px;
+}
+.col-30{
+    width: 30%;
+    padding: 15px;
+}
+.col-40{
+    width: 40%;
+}
+.col-50{
+    width: 50%;
+}
+.mx-15{
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+}
+.my-15{
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+.m-15{
+    margin: 15px !important;
+}
+/* nav */
+.nav {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 72px;    
+    border-bottom: 1px solid #E8E8E8;
+    font-family: 'Fredoka', sans-serif;
+    background-color: #FFFFFF;
+}
+.nav__brand {
+    display: flex;
+    align-items: center;
+}
+.nav a{
+    text-decoration: none;
+}
+.nav .nav__brand{
+    margin-left: 10px;
+    color: #941D1E;
+    font-size: 20px;
+}
+.nav .nav__brand img{
+    width: 40px;
+}
+.nav .nav__search{
+    border-radius: 22px;
+    background-color: #ffffff;
+    height: 40px;
+    position: relative;
+    border: 1px solid #E8E8E8;
+}
+.nav .nav__search input{
+    width: 350px;
+    margin: 0px 25px;
+    border: none;
+    margin-top: 8px;
+    outline: none;
+    line-height: 20px;
+}
+.nav .nav__search input:focus{
+    border: none;
+}
+.nav .nav__search .nav__search__btn{
+    position: absolute;
+    top: 7px;
+    right: 16px;
+    color: black;
+    opacity: 0.6;
+}
+.nav .nav__search .nav__search__btn:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+.nav .nav__login{
+    border: 1px solid #E8E8E8;
+    border-radius: 999px;
+    line-height: 40px;
+    padding: 0px 51px;
+    color: #fff;
+    background-color: #F05123;
+    font-weight: 900;    
+}
+.nav .nav__login:hover{
+    opacity: 0.7;
+    transition: 0.3s ease;
+}
+.nav__user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__user .nav__user__notification{
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.nav__user .nav__user__info{
+    height: 28px;
+    width: 28px;
+    margin: 0px 10px;
+    position: relative;
+}
+.nav__user .nav__user__info > img{
+    width: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.nav__user .nav__user__info .user__settingForm{
+    display: none;
+    position: absolute;
+    top: 38px;
+    right: 0px;
+    padding: 8px 24px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 -4px 32px rgb(0 0 0 / 20%);
+    animation: modalFaceIn 0.5s;
+}
+.line{
+    border-top:1px solid #2929292e;
+    margin: 8px 0px;
+}
+.nav__user .nav__user__info ul{
+    list-style: none;
+}
+.nav__user .nav__user__info .user__information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__user .nav__user__info .user__information img{
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px 0px;
+}
+.nav__user .nav__user__info .user__information ul{
+    margin-left: 12px;
+}
+.nav__user .nav__user__info .user__information li:nth-child(1){
+    color: #292929;
+}
+.nav__user .nav__user__info .user__information li:nth-child(2){
+    margin-top: 4px;
+    color: #757575;
+}
+.nav__user .nav__user__info .user__settingForm .user__functions li{
+    font-size: 14px;
+    color: #333;
+    padding: 8px 0px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.nav__user .nav__user__info .user__settingForm .user__functions li:hover{
+    opacity: 1;
+}
+/*---- Begin container ----*/
+.container{
+    width: calc(100% - 30px);
+    margin: 156px 15px 84px 15px ;
+    display: flex;
+}
+.container .section{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+    position: relative;
+    margin-top: 15px;
+}
+.section .section__name{
+    font-size: 20px;
+    margin-bottom: 15px;    
+}
+.container .sections--right{
+    width: 80%;
+    margin-right: 15px;
+}
+.container .sections--left{
+    width: 20%;
+}
+.container .folder__section,
+.container .courses__section{
+    padding: 15px;
+}
+#courses .section .courses__boxes{
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    align-items: center;
+}
+.courses__box{
+    width: 286px;
+    margin-bottom: 32px;
+    padding: 0px 8px;
+}
+
+.courses__box .course__image{
+    width: 100%;
+    position: relative;
+}
+.courses__box .course__image img{
+    width: 100%;
+    height: 150px;
+    border-radius: 16px;
+}
+.courses__box .box__shadow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 16px;
+    text-decoration: none;
+    opacity: 0;
+    transition: all .3s ease 0s;
+}
+.courses__box .course__image:hover .box__shadow{
+    opacity: 1;
+}
+
+.courses__box .course__detail__button{
+    display: inline-block;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 999px;
+    padding: 9px 16px;
+    font-weight: 500;
+    color: black;
+}
+.courses__box .course_name{
+    margin: 5px 0px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.courses__box .course__startDate{
+    font-size: 14px;
+    opacity: 0.8;
+}
+#courses .course__btnNewCourse {
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 11px;
+    color: #333;
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: ease .3s;
+}
+#courses .course__btnNewCourse:hover{
+    background-color: #333;
+    color: #fff;
+}
+/* Start excercise */
+#excercise .excercise__section{
+    padding: 15px;
+}
+#excercise .excercise__section .excercise__date h4{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 1px;
+}
+#excercise .excercise__section .excercise__item{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 8px 0px;
+}
+#excercise .excercise__section .excercise__item img{
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+}
+#excercise .excercise__section .excercise__title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 18px;
+    line-height: 1.2;
+}
+#excercise .excercise__section .excercise__title a{
+    text-decoration: none;
+    color: black;
+}
+#excercise .excercise__section .excercise__name{
+    
+}
+#excercise .excercise__section .excercise__subjectname{
+    margin-top: 1px;
+    font-size: 11.2px;
+    color: #A2A6AD;
+}
+#excercise .excercise__section .excercise__deadlinetime{
+    margin-left: 8px;
+    color: #6d727c;
+}
+/* Start folder */
+#folder .folder__edit{
+    display: block;
+    margin-top: 10px;
+}
+#folder a.folder__edit{
+    text-decoration: none;
+    color: #0a426e;
+}
+#folder a.folder__edit:hover{
+    text-decoration: underline ;
+    transition: 0.3s ease;
+}
+/* Start footer */
+#footer .footer__signup {
+    width: 100%;
+    background: linear-gradient(to right, #C29E67 0%, #F05123 100%);
+    padding: 60px;
+    text-align: center;
+    color: #fff;
+}
+#footer .footer__signup p{
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+#footer .footer__signup b{
+    display: block;
+    margin-bottom: 44px;
+}
+#footer .footer__signup a{
+    padding: 8px 20px;
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 4px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #f0512300;
+    font-size: 20px;
+    border: none ;
+}
+#footer .footer__signup a:hover{
+    background-color: #F05123;
+    transition: 1s ease;
+}
+#footer .footer__copyright {
+    width: 100%;
+    text-align: center;
+    background-color: #353E4E;
+    color: rgba(255,255,255,.4);
+    font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 11.2px;
+    line-height: 20px;
+    padding: 10px 0px ;
+}
+@keyframes modalFaceIn{
+    from {
+        transform: translateY(-10px);
+        opacity: 0.6;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+

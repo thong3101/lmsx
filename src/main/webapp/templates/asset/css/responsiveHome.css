@@ -1,0 +1,17 @@
+/* PC */
+@media (min-width:  64em){
+
+}
+/* ipad */
+@media(min-width: 46.25em) and (max-width: 63.9375em){
+
+}
+/* mobile */
+@media(max-width: 46.1875em){
+
+    
+}
+/* Mobile and tablet */
+@media (max-width: 63.9375em) {
+
+}
