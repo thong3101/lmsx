@@ -1,4 +1,4 @@
-package Controller;
+package LMSx.Controller.Common;
 
 import java.io.IOException;
 
