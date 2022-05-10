@@ -2,9 +2,14 @@ package LMSx.Model;
 
 import java.sql.Date;
 
+import javax.persistence.*;
+
 import LMSx.Common.Constant;
 
+@Entity
+@Table(name = "lecturer")
 public class Lecturer extends User{
+	@Id
 	private String lecturerID;
 	private String password;
 	

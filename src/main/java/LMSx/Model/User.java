@@ -2,7 +2,13 @@ package LMSx.Model;
 
 import java.sql.Date;
 
-public abstract class User {
+
+import javax.persistence.*;
+
+
+@MappedSuperclass
+public abstract class User{
+
 	private String name;
 	private String address;
 	private String email;

@@ -23,6 +23,7 @@
     
 </head>
 <body>
-    
+    <%@ include file = "/views/common/home.jsp" %>
+
 </body>
 </html>
