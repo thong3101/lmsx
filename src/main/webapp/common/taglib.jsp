@@ -2,4 +2,4 @@
 <%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator" prefix="dec"%>
 <script src="jquery-3.5.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<c:url value="/templates/asset/" var="url"></c:url>
+<c:url value="/templates/assets/" var="url"></c:url>
