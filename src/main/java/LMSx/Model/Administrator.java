@@ -2,9 +2,15 @@ package LMSx.Model;
 
 import java.sql.Date;
 
+import javax.persistence.*;
+
 import LMSx.Common.Constant;
 
+
+@Entity
+@Table(name = "administrator")
 public class Administrator extends User{
+	@Id
 	private String systemPasscode;
 	private String password;
 	
